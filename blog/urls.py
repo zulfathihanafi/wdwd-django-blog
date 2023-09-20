@@ -8,4 +8,5 @@ urlpatterns = [
     path('tags/', views.tags, name='tags'),
     path('authors/', views.authors, name='authors'),
     path('series/', views.series, name='series'),
+    path('post/<int:pk>', views.post_detail, name='post_details'),
 ]

@@ -4,4 +4,11 @@
 {% endblock title %}
 {% block content %}
     <h1>Tags</h1>
+    {% for tag in tags %}
+  <li>
+    <a href="#">{{tag}}</a>
+  </li>
+  {% empty %}
+  <i>No posts yet</i>
+  {% endfor %}
 {% endblock content %}

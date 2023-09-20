@@ -1,7 +1,16 @@
-{% extends "blog/_base.html"%}
-{% block title %}
-    Series
-{% endblock title %}
+{% extends "blog/_base.html"%} 
+{% block title %} Series {% endblock title %} 
 {% block content %}
-    <h1>Series</h1>
+<h1>Series</h1>
+<ol>
+{% for series in series%}
+
+  <li>
+    <a href="#">{{series}}</a>
+  </li>
+
+{% empty %}
+</ol>
+<i>No posts yet</i>
+{% endfor %} 
 {% endblock content %}
